@@ -50,7 +50,19 @@ prompt: while 1 == 1 {
     
     // If we got to this point, we know the input is good
     validInput = givenInput
-    break
+    break // quit the while loop and begin process section
     
+ 
+    // PROCESS
+    for letter in validInput {
+        // check each letter to make sure its IHOXSZN
+        print(letter)
+        if letter == "I" || letter == "H" || letter == "O" || letter == "X" || letter == "S" || letter == "Z" || letter == "N" {
+            // good keep checking (continue loop)
+            continue
+        } else {
+            break
+        }
+    }
 }
 
